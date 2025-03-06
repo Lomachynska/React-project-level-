@@ -15,17 +15,17 @@ function Header() {
         {/* Меню */}
         <nav>
           <ul className="flex space-x-6 text-lg">
-            <li><a href="#quests" className="hover:text-gray-300">КВЕСТИ</a></li>
-            <li><a href="#novachkam" className="hover:text-gray-300">НОВАЧКАМ</a></li>
-            <li><a href="#vidguki" className="hover:text-gray-300">ВІДГУКИ</a></li>
-            <li><a href="#aktsii" className="hover:text-gray-300">АКЦІЇ</a></li>
-            <li><a href="#kontakty" className="hover:text-gray-300">КОНТАКТИ</a></li>
+            <li><a href="#quests" className="hover:text-orange-500">КВЕСТИ</a></li>
+            <li><a href="#novachkam" className="hover:text-orange-500">НОВАЧКАМ</a></li>
+            <li><a href="#vidguki" className="hover:text-orange-500">ВІДГУКИ</a></li>
+            <li><a href="#aktsii" className="hover:text-orange-500">АКЦІЇ</a></li>
+            <li><a href="#kontakty" className="hover:text-orange-500">КОНТАКТИ</a></li>
           </ul>
         </nav>
 
         {/* Контактний номер */}
         <div className="text-lg">
-          <a href="tel:+88003335599" className="hover:text-gray-300">
+          <a href="tel:+88003335599" className="hover:text-orange-500">
             8 (800) 333-55-99
           </a>
         </div>

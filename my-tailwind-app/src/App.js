@@ -1,33 +1,34 @@
-// src/App.js
 import React from 'react';
-import Header from './components/Header';
-import QuestSelection from './components/QuestSelection';
-import MyImageQuest from './components/MyImageQuest'; // Імпортуємо компонент MyImageQuest
-import MyImageSocial from './components/MyImageSocial'; // Імпортуємо компонент для зображень соцмереж
+import Header from './components/Header'; 
+import MyImageQuest from './components/MyImageQuest';
+import MySubject from './components/MySubject'
 
 function App() {
   return (
     <div>
+
       <Header />
-
-      {/* Блок з іконками вибору квестів */}
-      <div className="p-8 flex flex-wrap">
-        <div className="w-full md:w-1/3">
-          <h2 className="text-white text-left">Іконки вибору квестів</h2>
-          <MyImageQuest />  {/* Використовуємо компонент MyImageQuest */}
-        </div>
-
-        {/* Блок зображення квесту */}
-        <div className="w-full md:w-2/3">
-          <QuestSelection />  {/* Зображення Card.png компонента QuestSelection */}
-        </div>
+      
+      {/* Блок для вибору квестів */}
+      <div className="p-8 flex text-white w-full">
+        <p>Квести у Вашому місці</p>
       </div>
 
-      {/* Блок для зображення соцмереж */}
-      <div className="p-8">
-        <h2 className="text-white text-left">Соцсеті</h2>
-        <MyImageSocial />  {/* Компонент для зображення соцмереж */}
+      <div className="p-8 w-full">
+        {/* Заголовок тематики */}
+        <h1 className="text-white text-5xl font-bold">Оберіть тематику</h1> {/* Заголовок */}
       </div>
+              
+        {/* Використовуємо space-x- для додавання відступів між елементами */}
+        <div className="p-6 text-white space-x-2">
+          <MyImageQuest />
+        </div>
+
+        {/* Блок для відображення MySubject, перевірте стилі */}
+        <div className="text-white p-6">
+          <MySubject />
+        </div>
+
     </div>
   );
 }
