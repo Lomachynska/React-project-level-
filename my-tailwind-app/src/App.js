@@ -11,7 +11,7 @@ function App() {
       
       {/* Блок для вибору квестів */}
       <div className="p-8 flex text-white w-full">
-        <p>Квести у Вашому місці</p>
+        <p className="hover:text-orange-500">Квести у Вашому місці</p>
       </div>
 
       <div className="p-8 w-full">

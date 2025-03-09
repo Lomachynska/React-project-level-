@@ -14,37 +14,37 @@ const MyImageQuest = () => {
       {/* Кожен блок з іконкою і підписом поряд */}
       <div className="flex items-center space-x-2"> {/* Це все в одну лінію */}
         <Allquest /> 
-        <p>Усі квести</p>
+        <p className="hover:underline hover:text-orange-500">Усі квести</p>
         <Vertical />
       </div>
       
       <div className="flex items-center space-x-2">
         <Adventures />
-        <p className="">Пригоди</p>
+        <p className="hover:underline hover:text-orange-500">Пригоди</p>
         <Vertical />
       </div>
       
       <div className="flex items-center space-x-2">
         <Horror />
-        <p>Жахи</p>
+        <p className="hover:underline hover:text-orange-500">Жахи</p>
         <Vertical />
       </div>
       
       <div className="flex items-center space-x-2">
         <Mysticism />
-        <p>Містика</p>
+        <p className="hover:underline hover:text-orange-500">Містика</p>
         <Vertical />
       </div>
       
       <div className="flex items-center space-x-2">
         <Detective />
-        <p>Детектив</p>
+        <p className="hover:underline hover:text-orange-500">Детектив</p>
         <Vertical />
       </div>
       
       <div className="flex items-center space-x-2">
         <SciFi />
-        <p>Sci-Fi</p>
+        <p className="hover:underline hover:text-orange-500">Sci-Fi</p>
         <Vertical />
       </div>
     </div>

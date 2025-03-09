@@ -12,41 +12,41 @@ import Oldserdak from '../components/image/subject/oldserdak.jpg';
 
 const MySubject = () => {
   return (
-    <div className="flex justify-start space-x-6 ml-4">
+    <div className="grid grid-cols-3 gap-6 justify-center items-center mx-auto">
       {/* Кожен блок з іконкою та зображенням */}
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center justify-center">
         <img src={Crypt} alt="Crypt" />
       </div>
       
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center justify-center">
         <img src={Maniac} alt="Maniac" />
       </div>
       
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center justify-center">
         <img src={Ritual} alt="Ritual" />
       </div>
       
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center justify-center">
         <img src={Mars} alt="Mars" />
       </div>
       
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center justify-center">
         <img src={Sercet} alt="Sercet" />
       </div>
       
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center justify-center">
         <img src={Hut} alt="Hut" />
       </div>
 
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center justify-center">
         <img src={Fatal} alt="Fatal" />
       </div>
 
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center justify-center">
         <img src={Underground} alt="Underground" />
       </div>
 
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center justify-center">
         <img src={Oldserdak} alt="Oldserdak" />
       </div>
     </div>
