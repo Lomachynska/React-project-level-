@@ -10,43 +10,43 @@ import { ReactComponent as Vertical } from '../components/image/vertical.svg';
 
 const MyImageQuest = () => {
   return (
-    <div className="flex justify-center space-x-6 ml-4"> {/* Відступ зліва */}
-      {/* Кожен блок з іконкою і підписом поряд */}
-      <div className="flex items-center space-x-2"> {/* Це все в одну лінію */}
+    <div className="flex justify-center space-x-6 ml-4">
+      {/* Кожен блок з іконкою і підписом поряд, обгорнутий в тег <a> для переходу */}
+      <a href="#allquests" className="flex items-center space-x-2 mb-4">
         <Allquest /> 
         <p className="hover:underline hover:text-orange-500">Усі квести</p>
         <Vertical />
-      </div>
+      </a>
       
-      <div className="flex items-center space-x-2">
+      <a href="#adventures" className="flex items-center space-x-2 mb-4">
         <Adventures />
         <p className="hover:underline hover:text-orange-500">Пригоди</p>
         <Vertical />
-      </div>
+      </a>
       
-      <div className="flex items-center space-x-2">
+      <a href="#horror" className="flex items-center space-x-2 mb-4">
         <Horror />
         <p className="hover:underline hover:text-orange-500">Жахи</p>
         <Vertical />
-      </div>
+      </a>
       
-      <div className="flex items-center space-x-2">
+      <a href="#mysticism" className="flex items-center space-x-2 mb-4">
         <Mysticism />
         <p className="hover:underline hover:text-orange-500">Містика</p>
         <Vertical />
-      </div>
+      </a>
       
-      <div className="flex items-center space-x-2">
+      <a href="#detective" className="flex items-center space-x-2 mb-4">
         <Detective />
         <p className="hover:underline hover:text-orange-500">Детектив</p>
         <Vertical />
-      </div>
+      </a>
       
-      <div className="flex items-center space-x-2">
+      <a href="#scifi" className="flex items-center space-x-2 mb-4">
         <SciFi />
         <p className="hover:underline hover:text-orange-500">Sci-Fi</p>
         <Vertical />
-      </div>
+      </a>
     </div>
   );
 };

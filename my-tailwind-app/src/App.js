@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from './components/Header'; 
 import MyImageQuest from './components/MyImageQuest';
-import MySubject from './components/MySubject'
+import MySubject from './components/MySubject';
+import Footer from './components/Footer';  // Імпортуємо Footer
 
 function App() {
   return (
-    <div>
-
+    <div className="min-h-screen flex flex-col relative"> {/* Використовуємо relative для правильного позиціонування футера */}
       <Header />
       
       {/* Блок для вибору квестів */}
@@ -19,16 +19,18 @@ function App() {
         <h1 className="text-white text-5xl font-bold">Оберіть тематику</h1> {/* Заголовок */}
       </div>
               
-        {/* Використовуємо space-x- для додавання відступів між елементами */}
-        <div className="p-6 text-white space-x-2">
-          <MyImageQuest />
-        </div>
+      {/* Використовуємо space-x- для додавання відступів між елементами */}
+      <div className="p-6 text-white space-x-2">
+        <MyImageQuest />
+      </div>
 
-        {/* Блок для відображення MySubject, перевірте стилі */}
-        <div className="text-white p-6">
-          <MySubject />
-        </div>
+      {/* Блок для відображення MySubject, перевірте стилі */}
+      <div className="text-white p-6">
+        <MySubject />
+      </div>
 
+      {/* Додаємо футер з фоном C6C4C2 */}
+      <Footer /> 
     </div>
   );
 }
