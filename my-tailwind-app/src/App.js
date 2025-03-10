@@ -24,12 +24,8 @@ function App() {
         <MyImageQuest />
       </div>
 
-      {/* Блок для відображення MySubject, перевірте стилі */}
-      <div className="text-white p-6">
-        <MySubject />
-      </div>
 
-      {/* Додаємо футер з фоном C6C4C2 */}
+      {/*  футер */}
       <Footer /> 
     </div>
   );
