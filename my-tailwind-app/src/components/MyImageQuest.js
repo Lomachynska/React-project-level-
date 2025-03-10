@@ -30,10 +30,10 @@ const categoryImages = {
 };
 
 const MyImageQuest = () => {
-  // Стан для активної категорії (яка категорія вибрана)
+  // Стан активної категорії (яка категорія вибрана)
   const [activeCategory, setActiveCategory] = useState('allquests');
 
-  // Функція для зміни категорії при натисканні на кнопку
+  // Функція зміни категорії при натисканні на кнопку
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
   };
@@ -103,7 +103,7 @@ const MyImageQuest = () => {
         </a>
       </div>
 
-      {/* Виведення зображень на основі вибраної категорії */}
+      {/* Виведення зображень для вибраної категорії */}
       <div className="flex flex-wrap justify-center items-center gap-6 mx-auto">
         {categoryImages[activeCategory]?.map((image, index) => (
           <div key={index} className="flex items-center justify-center max-w-xs">
@@ -111,7 +111,7 @@ const MyImageQuest = () => {
               src={image}
               alt={`Category image ${index}`}
               className="w-full h-auto rounded-lg shadow-lg"
-              style={{ maxWidth: '344px', maxHeight: '232px' }} // Максимальна ширина і висота
+              style={{ maxWidth: '344px', maxHeight: '232px' }} //  ширина і висота обраного зображення
             />
           </div>
         ))}
