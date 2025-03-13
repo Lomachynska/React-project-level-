@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import MyLogoGroup from '../components/MyLogoGroup'; // Імпортуємо компонент Logo
+import { ReactComponent as Group14 } from '../components/image/quest/questy/Group14.svg';  
 
 function Header() {
   // Стан для показу контактної інформації
@@ -43,19 +44,24 @@ function Header() {
 
       {/* Виведення контактної інформації та карти */}
       {showContacts && (
-        <div className="mt-6 p-4 bg-gray-800 text-white flex flex-wrap">
+        <div className="mt-6 p-4 bg-E5E5E5 text-white flex flex-wrap">
           {/* Лівий блок для контактної інформації */}
           <div className="w-full md:w-1/2 pr-4 mb-4 md:mb-0">
-            <p>Квести у Вашому місці</p>
-            <h2 className="text-2xl font-bold mb-4">Контакти</h2>
-            <p>Телефон: <a href="tel:+88003335599" className="hover:text-orange-500">8 (800) 333-55-99</a></p>
-            <p>Email: <a href="mailto:info@yourcompany.com" className="hover:text-orange-500">info@yourcompany.com</a></p>
+          <p>Квести у Вашому місці</p>
+          <h2 className="text-2xl font-bold mb-4">Контакти</h2>
+          <Group14 className="mb-4" /> {/* Додаємо SVG-графіку */}
+          <p>Адрес</p> {/* Додаємо відступ нижче */}
+          <p className="mb-4">Львів,</p>
+          <p>Графік роботи</p>
+          <p className="mb-4">Щоденно, с 9:00 до 20:00</p>
+          <p>Телефон: <a href="tel:+88003335599" className="hover:text-orange-500">8 (800) 333-55-99</a></p>
+          <p>Email: <a href="mailto:info@escape-room.com" className="hover:text-orange-500">info@escape-room.com</a></p>
           </div>
 
+
           {/* Правий блок для карти */}
-          <div className="w-full md:w-1/2 pl-4">
-            <h3 className="text-xl font-bold mb-4">Наше місцезнаходження:</h3>
-            <div className="w-full h-64 bg-gray-600">
+          <div className="w-full md:w-1/2 pl-4 mt-6"> {/* Додаємо mt-6 для відступу */}
+            <div className="w-full h-64 bg-gray-600 mb-6">
               {/* Вставляємо карту з точкою Львова */}
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.7094609737823!2d24.029697716429658!3d49.8397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473addf053f4a409%3A0x90d2f160e9e72f2!2z0JzQsNGG0LzQtdGA!5e0!3m2!1sen!2sua!4v1617153035200!5m2!1sen!2sua" 
