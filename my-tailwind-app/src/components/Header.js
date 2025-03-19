@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';  // Import useNavigate from react-router-dom
 import MyLogoGroup from '../components/MyLogoGroup'; // Імпортуємо компонент Logo
-import { ReactComponent as Group14 } from '../components/image/quest/questy/Group14.svg';  
+import { ReactComponent as Group14 } from '../components/image/quest/questy/Group14.svg';
 
 function Header() {
   // Стан для показу контактної інформації
   const [showContacts, setShowContacts] = useState(false);
+  const navigate = useNavigate(); // Use useNavigate for navigation
 
   // Функція для обробки натискання на пункт меню
   const handleContactClick = (e) => {
     e.preventDefault(); // Запобігаємо стандартному переходу за посиланням
     setShowContacts(!showContacts); // Перемикаємо стан для показу/сховування контактної інформації
+    // For navigation, use navigate instead of history
+    navigate("/contacts");  // You can change the path to any page you want
   };
 
   return (

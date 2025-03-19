@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './components/Header'; 
 import MyImageQuest from './components/MyImageQuest';
-import MySubject from './components/MySubject';
 import Footer from './components/Footer';  // Імпортуємо Footer
 
 function App() {
